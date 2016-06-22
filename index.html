@@ -3,71 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HX3 - Page d'accueil</title>
+    <title>HX3 - Cours</title>
     <!-- Couleur pour Chrome mobile -->
-    <meta name="theme-color" content="#42A5F5">
+    <meta name="theme-color" content="#E53935">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Material Design Lite -->
     <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
     <script src="bower_components/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <script src="items.js"></script>
-    <style media="screen">
-        body {
-            overflow-x: hidden;
-        }
-
-        #fixedFAB {
-            position: fixed;
-            bottom: 32px;
-            right: 32px;
-        }
-
-        .mdl-layout__header {
-            background: url("images/fond.jpg") center / cover;
-        }
-
-        .mdl-layout__header span {
-            font-weight: 300;
-        }
-
-        .mdl-layout__drawer {
-            position: fixed;
-        }
-
-        #moment,
-        #chapitres {
-            padding-left: 32px;
-        }
-
-        .chapL1 {
-            display: flex;
-            flex-flow: row;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .chapL1 button {
-            margin-right: 16px;
-        }
-
-        .chapL1 h4 {
-            font-weight: 300;
-            margin: 24px 0;
-        }
-
-        .sep {
-            background-color: #E0E0E0;
-            height: 1px;
-            width: 100%
-        }
-
-        .chap-list-item {
-            padding: 0;
-            margin: 0 32px 16px 32px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 
 <body>
@@ -80,19 +24,19 @@
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout__title mdl-layout--small-screen-only">Maths en HX3</span>
             </div>
+            <div class="mdl-layout__header-row "></div>
             <div class="mdl-layout__header-row"></div>
-            <div class="mdl-layout__header-row"></div>
-            <div class="mdl-layout__header-row"></div>
-            <div class="mdl-layout__header-row"></div>
+            <div class="mdl-layout__header-row mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
+            <div class="mdl-layout__header-row mdl-cell--hide-phone"></div>
         </header>
 
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Maths en HX3</span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Accueil</a>
-                <a class="mdl-navigation__link" href="">Devoirs Surveillés</a>
-                <a class="mdl-navigation__link" href="">Mini-Projet</a>
-                <a class="mdl-navigation__link" href="">Programme</a>
+                <a class="mdl-navigation__link" href="index.html">Cours</a>
+                <a class="mdl-navigation__link" href="ds.html">Devoirs Surveillés</a>
+                <a class="mdl-navigation__link" href="miniProjet.html">Mini-Projet</a>
+                <a class="mdl-navigation__link" onclick="window.open('MATHEMATIQUES MPSI');">Programme</a>
             </nav>
         </div>
 
@@ -102,71 +46,6 @@
                 <!-- En ce moment -->
                 <div id="moment">
                     <h3>En ce moment</h3>
-
-                    <div class="chap">
-
-                        <div class="chapL1">
-                            <button class="mdl-button mdl-js-button mdl-button--icon">
-                                <i class="material-icons">expand_more</i>
-                            </button>
-                            <h4>1. Diagonalisation</h4>
-                        </div>
-
-                        <ul class="chap-list-item mdl-list">
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bryan Cranston
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Aaron Paul
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bob Odenkirk
-                            </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="sep"></div>
-
-                    <div class="chap">
-
-                        <div class="chapL1">
-                            <button class="mdl-button mdl-js-button mdl-button--icon">
-                                <i class="material-icons">expand_more</i>
-                            </button>
-                            <h4>5. Matrices</h4>
-                        </div>
-
-                        <ul class="chap-list-item mdl-list">
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                              <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bryan Cranston
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Aaron Paul
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bob Odenkirk
-                            </span>
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
 
                 <!-- Séparateur -->
@@ -176,111 +55,20 @@
 
                 <div id="chapitres">
                     <h3>Tous les chapitres</h3>
-
-                    <div class="chap">
-
-                        <div class="chapL1">
-                            <button class="mdl-button mdl-js-button mdl-button--icon">
-                                <i class="material-icons">expand_more</i>
-                            </button>
-                            <h4>1. Diagonalisation</h4>
-                        </div>
-
-                        <ul class="chap-list-item mdl-list">
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bryan Cranston
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Aaron Paul
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bob Odenkirk
-                            </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="sep"></div>
-
-                    <div class="chap">
-
-                        <div class="chapL1">
-                            <button class="mdl-button mdl-js-button mdl-button--icon">
-                                <i class="material-icons">expand_more</i>
-                            </button>
-                            <h4>5. Matrices</h4>
-                        </div>
-
-                        <ul class="chap-list-item mdl-list">
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                              <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bryan Cranston
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Aaron Paul
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bob Odenkirk
-                            </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="sep"></div>
-
-                    <div class="chap">
-
-                        <div class="chapL1">
-                            <button class="mdl-button mdl-js-button mdl-button--icon">
-                                <i class="material-icons">expand_more</i>
-                            </button>
-                            <h4>1. Diagonalisation</h4>
-                        </div>
-
-                        <ul class="chap-list-item mdl-list">
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bryan Cranston
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Aaron Paul
-                            </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                  <i class="material-icons mdl-list__item-icon" onclick="window.open('a.pdf', '_self');">file_download</i>
-                              Bob Odenkirk
-                            </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="sep"></div>
-
-                    
-
                 </div>
 
             </div>
+
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li>AQT</li>
+                    </ul>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    ■
+                </div>
+            </footer>
 
             <!-- Colored FAB button with ripple -->
             <button onclick="window.open('mailto:kernouil@yahoo.fr', '_self');" id="fixedFAB" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
@@ -290,6 +78,8 @@
         </main>
 
     </div>
+
+    <script src="items.js"></script>
 
 </body>
 

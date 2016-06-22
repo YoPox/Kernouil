@@ -1,0 +1,105 @@
+body {
+    overflow-x: hidden;
+}
+#fixedFAB {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 2;
+}
+.mdl-layout__header {
+    background: url("images/fond.jpg") center / cover;
+}
+.mdl-layout__header span {
+    font-weight: 300;
+}
+.mdl-layout__drawer {
+    position: fixed;
+}
+#moment, #chapitres, .ds {
+    padding-left: 32px;
+    margin: 0;
+}
+.chapL1 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.chapL1 button {
+    margin-right: 16px;
+}
+.chapL1 h4 {
+    font-weight: 300;
+    margin: 24px 0;
+}
+.sep {
+    background-color: #E0E0E0;
+    height: 1px;
+    width: 100%
+}
+.chap-list-item {
+    padding: 0;
+    margin: 0 32px 16px 32px;
+}
+.mdl-list__item .mdl-list__item-primary-content {
+    height: 24px !important;
+}
+.mdl-list__item-primary-content .mdl-button {
+    height: 32px;
+}
+.chap .disabled {
+    color: #BDBDBD;
+}
+footer {
+    padding-left: 48px !important;
+}
+.mdl-mini-footer__right-section {
+    padding-right: 96px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.kernouil-card-square.mdl-card {
+    width: 320px;
+    height: 416px;
+    margin: 16px;
+}
+#c1>.mdl-card__title {
+    color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/miniprojet1.jpg') center / cover;
+}
+#c2>.mdl-card__title {
+    color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/miniprojet2.jpg') center / cover;
+}
+#c3>.mdl-card__title {
+    color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/miniprojet3.jpg') center / cover;
+}
+#c4>.mdl-card__title {
+    color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/miniprojet4.jpg') center / cover;
+}
+#cardContainer {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+}
+@media screen and (max-width: 500px) {
+    h3 {
+        font-size: 28px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+    }
+    .mdl-list__item {
+        padding: 8px 0;
+    }
+    .mdl-list__item span {
+        font-size: 14px;
+    }
+}

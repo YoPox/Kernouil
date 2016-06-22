@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HX3 - Mini Projet</title>
+    <!-- Couleur pour Chrome mobile -->
+    <meta name="theme-color" content="#E53935">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+        <!-- Header avec photo :-) -->
+        <!-- Quand on scroll une partie disparait  -->
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout__title mdl-layout--small-screen-only">Maths en HX3</span>
+            </div>
+            <div class="mdl-layout__header-row "></div>
+            <div class="mdl-layout__header-row"></div>
+            <div class="mdl-layout__header-row mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
+            <div class="mdl-layout__header-row mdl-cell--hide-phone"></div>
+        </header>
+
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Maths en HX3</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index.html">Cours</a>
+                <a class="mdl-navigation__link" href="ds.html">Devoirs Surveillés</a>
+                <a class="mdl-navigation__link" href="miniProjet.html">Mini-Projet</a>
+                <a class="mdl-navigation__link" onclick="window.open('MATHEMATIQUES MPSI');">Programme</a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content">
+            <div class="page-content">
+
+                <!-- Colored FAB button with ripple -->
+                <button onclick="window.open('mailto:kernouil@yahoo.fr', '_self');" id="fixedFAB" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                    <i class="material-icons">mail</i>
+                </button>
+
+                <ul>
+                    <li class='mdl-list__item' onclick='window.open("00-MiniProjet/PlanningTIPE")'>
+                        <span class='mdl-list__item-primary-content'>
+                          <button class='mdl-button mdl-js-button mdl-button--icon mdl-list__item-icon'>
+                              <i class='material-icons'>open_in_browser</i>
+                          </button>
+                          Planning des TIPE
+                      </span>
+                    </li>
+
+                    <div class="sep"></div>
+
+                    <li class='mdl-list__item' onclick='window.open("00-MiniProjet/ConseilsMiniProjet")'>
+                        <span class='mdl-list__item-primary-content'>
+                          <button class='mdl-button mdl-js-button mdl-button--icon mdl-list__item-icon'>
+                              <i class='material-icons'>open_in_browser</i>
+                          </button>
+                          Conseils pour les mini-projets
+                      </span>
+                    </li>
+                </ul>
+
+                <div class="sep"></div>
+
+                <div id="cardContainer">
+
+                    <div id="c1" class="kernouil-card-square mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2 class="mdl-card__title-text">Séance 1</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Cette séance porte sur les paradoxes.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/Braess" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Paradoxe de Braess
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/PileOuFace" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Paradoxe du pile ou face
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/Parrondo" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Paradoxe de Parrondo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="c2" class="kernouil-card-square mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2 class="mdl-card__title-text">Séance 2</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Seconde séance d'ADS.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/abc" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Conjecture abc
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/CourbesElliptiques" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Courbes elliptiques
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/Bertrand" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Postulat de Bertrand
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/Equirepartition" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Équirépartition
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="c3" class="kernouil-card-square mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2 class="mdl-card__title-text">Séance 3</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Cette séance porte sur la géométrie.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/NombresConstructibles" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Nombres constructibles
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/Polygones" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Construction de polygones
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/TasOranges" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Tas d'oranges
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="c4" class="kernouil-card-square mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2 class="mdl-card__title-text">Séance 4</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Dernière séance d'ADS.
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/Benford" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Loi de Benford
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/Graphes" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              Graphes planaires
+                            </a>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="00-MiniProjet/SternBrocot" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                              La suite de Stern-Brocot
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li>AQT</li>
+                    </ul>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    ■
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
