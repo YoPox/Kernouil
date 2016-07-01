@@ -168,7 +168,7 @@ function addChap(source, i) {
     var li = "";
 
     for (item of fichiersChapitres[i]) {
-        li += "<li class='mdl-list__item' onclick='window.open(\"" + chapitres[i][4] + "/" + chapitres[i][3] + item + "\")'> \
+        li += "<li class='mdl-list__item' onclick='window.open(\"" + chapitres[i][4] + "/" + chapitres[i][3] + item + ".pdf\")'> \
                 <span class='mdl-list__item-primary-content'> \
                 <button class='mdl-button mdl-js-button mdl-button--icon mdl-list__item-icon'> \
                   <i class='material-icons'>open_in_browser</i> \
